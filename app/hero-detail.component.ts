@@ -4,16 +4,17 @@ import { Location } from '@angular/common';
 
 import 'rxjs/add/operator/switchMap';
 
-import { Hero } from './hero';
+// import { Hero } from './hero';
 import { HeroService } from './hero.service';
 
 @Component({
     selector: 'hero-detail',
-    templateUrl: 'app/hero-detail.component.html'
+    templateUrl: 'app/hero-detail.component.html',
+    styleUrls: [ 'app/hero-detail.component.css' ]
 })
 
 export class HeroDetailComponent implements OnInit {
-    @Input() hero: Hero;
+    // @Input() hero: Hero;
 
     constructor(
         private heroService: HeroService,
